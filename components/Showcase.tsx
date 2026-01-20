@@ -5,26 +5,31 @@ const CASE_STUDIES = [
     brand: "Aura Interiors",
     sector: "Interior Design",
     image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800",
+    alt: "Zydus Media Web Design for Aura Interiors"
   },
   {
     brand: "NexaFlow Systems",
     sector: "Technology & SaaS",
     image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800",
+    alt: "Zydus Media Tech Brand Transformation for NexaFlow Systems"
   },
   {
     brand: "Vanguard Realty",
     sector: "Real Estate",
     image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=800",
+    alt: "Real Estate Digital Strategy by Zydus Media for Vanguard Realty"
   },
   {
     brand: "Apex Motors",
     sector: "Automotive & EV",
     image: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&q=80&w=800",
+    alt: "Automotive Website and Marketing by Zydus Media for Apex Motors"
   },
   {
     brand: "Paws & Pour",
     sector: "Hospitality & Pet Friendly",
     image: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80&w=800",
+    alt: "Hospitality Brand Social Media Strategy by Zydus Media"
   }
 ];
 
@@ -42,7 +47,7 @@ export const Showcase: React.FC = () => {
             <div key={idx} className="group relative rounded-[2rem] overflow-hidden aspect-[4/5] border border-white/5 bg-[#08070b]">
               <img 
                 src={study.image} 
-                alt={study.brand} 
+                alt={study.alt} 
                 className="absolute inset-0 w-full h-full object-cover grayscale transition-all duration-700 group-hover:scale-110 group-hover:grayscale-0 opacity-40 group-hover:opacity-70"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#08070b] via-transparent to-transparent opacity-90" />

@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 export const Hero: React.FC = () => {
@@ -8,7 +7,7 @@ export const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2000" 
-          alt="Digital Space Background" 
+          alt="Zydus Media - Digital Transformation and Tech Marketing" 
           className="absolute inset-0 w-full h-full object-cover opacity-40 grayscale hover:grayscale-0 transition-all duration-1000"
         />
         {/* Deep gradient overlay to blend into the dark theme and provide readability for left-aligned text */}
