@@ -10,24 +10,11 @@ export const Footer: React.FC = () => {
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-blue-600/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10 flex flex-col items-center">
-        {/* Logo Section - ZS Branding */}
+        {/* Logo Section - Text Only with Spaced Out ZYDUS and MEDIA */}
         <div className="text-center mb-12">
-          <div className="flex flex-col items-center">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="relative w-14 h-14 flex items-center justify-center">
-                <div className="absolute inset-0 border border-white/10 rounded-xl"></div>
-                {/* Removed blue border from footer logo base */}
-                <div className="absolute inset-1.5 bg-[#08070b] border border-white/10 rounded-lg"></div>
-                <div className="relative z-10 flex items-baseline translate-y-[1px]">
-                  <span className="text-2xl font-black tracking-tighter text-white">Z</span>
-                  <span className="text-2xl font-black tracking-tighter text-white">S</span>
-                </div>
-              </div>
-              <div className="flex flex-col items-start leading-none text-left">
-                <span className="text-3xl font-black tracking-tighter text-white">ZYDUS</span>
-                <span className="text-[9px] font-black tracking-[0.45em] text-white/60 uppercase">Media</span>
-              </div>
-            </div>
+          <div className="flex flex-col items-center leading-none w-fit">
+            <span className="text-3xl font-logo-main text-white">ZYDUS</span>
+            <span className="font-logo-sub text-white/60 mt-1">Media</span>
           </div>
         </div>
 

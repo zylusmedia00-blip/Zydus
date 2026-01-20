@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zydus Media | Bridging the Offline-Digital Gap</title>
-    <!-- Custom SVG Favicon to replace the "globe" icon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233b82f6'%3E%3Cpath d='M21 7L9 19L3.5 13.5L4.91 12.09L9 16.17L19.59 5.59L21 7Z'/%3E%3Cpath d='M12 2L2 12L12 22L22 12L12 2Z' fill-opacity='0.2'/%3E%3C/svg%3E">
+    <!-- Custom ZS Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d0c12'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='900' font-size='18' text-anchor='middle' fill='white'%3EZS%3C/text%3E%3C/svg%3E">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
@@ -37,8 +37,24 @@
         background-size: 40px 40px;
       }
 
-      .font-logo-main { font-weight: 900; }
-      .font-logo-sub { font-weight: 500; letter-spacing: 0.45em; font-size: 0.65rem; }
+      /* Refined ZYDUS Spacing - "In between" style */
+      .font-logo-main { 
+        font-weight: 900; 
+        letter-spacing: 0.08em;
+        margin-right: -0.08em; /* Offset for the last letter */
+      }
+      
+      /* Spaced out MEDIA to match refined ZYDUS width */
+      .font-logo-sub { 
+        font-weight: 800; 
+        letter-spacing: 1.15em; 
+        font-size: 0.52rem; 
+        text-transform: uppercase;
+        margin-right: -1.15em; /* Compensates for the tracking on the last letter */
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
 
       /* Edge masking to prevent line flickering on scroll */
       .bg-mask-container {
