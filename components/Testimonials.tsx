@@ -4,13 +4,13 @@ const TESTIMONIALS = [
   {
     name: "Arjun Mehta",
     company: "Mehta Analytics (SaaS)",
-    text: "Scaling a B2B SaaS platform requires more than just code; it requires a digital identity that commands authority. Zydus Media completely overhauled our user acquisition funnel and brand narrative. Since launching our new platform, our trial-to-paid conversion rate has jumped by 45%. They are the architects of modern tech growth.",
+    text: "Scaling a B2B SaaS platform requires more than just code; it requires a digital identity that commands authority. Zydus Media completely overhauled our user acquisition funnel and brand narrative. Since launching our new platform, our trial-to-paid conversion rate has jumped. They are the architects of modern tech growth.",
     rating: 5
   },
   {
     name: "Saira Khan",
     company: "Khan Heritage Carpets",
-    text: "Moving our physical gallery to a digital platform was daunting. Zydus handled everything—from the high-resolution asset management to the social strategy that now drives 60% of our new leads. They bridge the gap between traditional craftsmanship and modern marketing like nobody else.",
+    text: "Moving our physical gallery to a digital platform was daunting. Zydus handled everything—from the high-resolution asset management to the social strategy that now drives our new leads. They bridge the gap between traditional craftsmanship and modern marketing like nobody else.",
     rating: 5
   }
 ];
