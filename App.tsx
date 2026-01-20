@@ -7,7 +7,6 @@ import { Showcase } from './components/Showcase.tsx';
 import { Consultation } from './components/Consultation.tsx';
 import { ContactForm } from './components/ContactForm.tsx';
 import { Footer } from './components/Footer.tsx';
-import { Stats } from './components/Stats.tsx';
 import { Testimonials } from './components/Testimonials.tsx';
 
 const App: React.FC = () => {
@@ -74,7 +73,6 @@ const App: React.FC = () => {
       
       <main className="relative z-10">
         <Hero />
-        <Stats />
         <Features />
         <Showcase />
         <Testimonials />
