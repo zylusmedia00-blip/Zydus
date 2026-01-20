@@ -1,13 +1,14 @@
-
 import React, { useState, useEffect } from 'react';
-import { supabase } from './supabase';
-import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { Features } from './components/Features';
-import { Showcase } from './components/Showcase';
-import { Consultation } from './components/Consultation';
-import { ContactForm } from './components/ContactForm';
-import { Footer } from './components/Footer';
+import { supabase } from './supabase.ts';
+import { Navbar } from './components/Navbar.tsx';
+import { Hero } from './components/Hero.tsx';
+import { Features } from './components/Features.tsx';
+import { Showcase } from './components/Showcase.tsx';
+import { Consultation } from './components/Consultation.tsx';
+import { ContactForm } from './components/ContactForm.tsx';
+import { Footer } from './components/Footer.tsx';
+import { Stats } from './components/Stats.tsx';
+import { Testimonials } from './components/Testimonials.tsx';
 
 const App: React.FC = () => {
   const [user, setUser] = useState<any>(null);
@@ -71,10 +72,12 @@ const App: React.FC = () => {
       {/* Main Content Layout */}
       <Navbar />
       
-      <main className="relative z-10 pt-20">
+      <main className="relative z-10">
         <Hero />
+        <Stats />
         <Features />
         <Showcase />
+        <Testimonials />
         <div id="consultation">
           <Consultation />
         </div>

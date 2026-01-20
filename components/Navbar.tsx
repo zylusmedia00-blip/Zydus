@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 export const Logo: React.FC<{ light?: boolean }> = ({ light = true }) => (
   <div className="flex flex-col items-start leading-none group cursor-pointer select-none">
@@ -9,21 +9,9 @@ export const Logo: React.FC<{ light?: boolean }> = ({ light = true }) => (
 );
 
 export const Navbar: React.FC = () => {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      scrolled ? 'py-4 backdrop-blur-xl bg-[#08070b]/95 border-b border-white/10' : 'py-6'
-    }`}>
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+    <nav className="absolute top-0 left-0 right-0 z-50 py-10 px-6 bg-transparent">
+      <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <Logo />
         </div>

@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { supabase } from '../supabase';
+import { supabase } from '../supabase.ts';
 
 export const ContactForm: React.FC = () => {
   const [loading, setLoading] = useState(false);
