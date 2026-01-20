@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 export const Footer: React.FC = () => {
@@ -11,11 +10,21 @@ export const Footer: React.FC = () => {
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-blue-600/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10 flex flex-col items-center">
-        {/* Logo Section */}
+        {/* Logo Section - Full Branding */}
         <div className="text-center mb-12">
-          <div className="flex flex-col items-center leading-none">
-            <span className="text-4xl font-black tracking-tighter text-white uppercase">ZYDUS</span>
-            <span className="text-[11px] font-medium text-white/60 tracking-[0.5em] mt-2 uppercase">MEDIA</span>
+          <div className="flex flex-col items-center">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="relative w-12 h-12 flex items-center justify-center">
+                <div className="absolute inset-0 bg-blue-500 rounded-lg rotate-45 opacity-20"></div>
+                <svg className="w-8 h-8 text-blue-500 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div className="flex flex-col items-start leading-none text-left">
+                <span className="text-3xl font-black tracking-tighter text-white">ZYDUS</span>
+                <span className="text-[9px] font-black tracking-[0.45em] text-white/60">MEDIA</span>
+              </div>
+            </div>
           </div>
         </div>
 

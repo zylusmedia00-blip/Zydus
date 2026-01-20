@@ -16,18 +16,18 @@ export const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-[#08070b] via-transparent to-transparent" />
       </div>
       
-      <div className="max-w-7xl mx-auto w-full relative z-10 pt-20">
+      <div className="max-w-7xl mx-auto w-full relative z-10 pt-32 md:pt-40">
         <div className="max-w-3xl text-left">
-          {/* Brand-colored Tagline - updated from fuchsia to blue-500 */}
+          {/* Brand-colored Tagline - increased mb-4 to mb-10 */}
           <div className="opacity-0 animate-fade-in-up">
-            <span className="text-blue-500 font-bold text-lg md:text-xl tracking-tight mb-4 block uppercase">
+            <span className="text-blue-500 font-bold text-lg md:text-xl tracking-tight mb-10 block uppercase">
               Zydus Media: Digital Transformation Agency
             </span>
           </div>
 
-          {/* Main Headline */}
+          {/* Main Headline - increased mb-8 to mb-14 */}
           <div className="opacity-0 animate-fade-in-up delay-100">
-            <h1 className="text-5xl md:text-8xl font-black tracking-tighter mb-8 leading-[1] text-white">
+            <h1 className="text-5xl md:text-8xl font-black tracking-tighter mb-14 leading-[1] text-white">
               Legacy Brands <br />
               Go Digital.
             </h1>
